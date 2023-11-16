@@ -9,7 +9,7 @@ public class Subject {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long subjectID;
+    private int subjectID;
 
     private String subjectName;
 
@@ -22,18 +22,18 @@ public class Subject {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Subject(Long subjectID, String subjectName, List<Mark> marks) {
+	public Subject(int subjectID, String subjectName, List<Mark> marks) {
 		super();
 		this.subjectID = subjectID;
 		this.subjectName = subjectName;
 		this.marks = marks;
 	}
 
-	public Long getSubjectID() {
+	public int getSubjectID() {
 		return subjectID;
 	}
 
-	public void setSubjectID(Long subjectID) {
+	public void setSubjectID(int subjectID) {
 		this.subjectID = subjectID;
 	}
 

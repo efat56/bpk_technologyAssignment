@@ -9,7 +9,7 @@ public class Student {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long studentID;
+    private int studentID;
 
     private String firstName;
     private String lastName;
@@ -28,7 +28,7 @@ public class Student {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Student(Long studentID, String firstName, String lastName, String dateOfBirth, String parentName,
+	public Student(int studentID, String firstName, String lastName, String dateOfBirth, String parentName,
 			String address, String city, String phoneNumber, List<Mark> marks) {
 		super();
 		this.studentID = studentID;
@@ -42,11 +42,11 @@ public class Student {
 		this.marks = marks;
 	}
 
-	public Long getStudentID() {
+	public int getStudentID() {
 		return studentID;
 	}
 
-	public void setStudentID(Long studentID) {
+	public void setStudentID(int studentID) {
 		this.studentID = studentID;
 	}
 
