@@ -6,6 +6,7 @@ import com.bpk.dao.StudentDao;
 import com.bpk.dao.StudentDaoImpl;
 
 import com.bpk.entity.Mark;
+import com.bpk.entity.Student;
 
 public class RegisterMarks {
 
@@ -14,10 +15,14 @@ public class RegisterMarks {
 		
 		Scanner sc = new Scanner(System.in);
 		
+		
+		
 		System.out.println("Enter student marksObtained");
 		int marks  = sc.nextInt();
 		
 		Mark mr = new Mark();
+		
+	
 		mr.setMarksObtained(marks);
 		
 		StudentDao sDao = new StudentDaoImpl();

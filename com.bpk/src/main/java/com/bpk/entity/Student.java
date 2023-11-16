@@ -18,6 +18,7 @@ public class Student {
     private String address;
     private String city;
     private String phoneNumber;
+   
 
     @OneToMany(mappedBy = "student")
     private List<Mark> marks;
